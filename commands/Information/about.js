@@ -25,11 +25,10 @@ module.exports = {
 
       const mainPage = new MessageEmbed()
             .setAuthor('CoppaMusic', 'https://media.discordapp.net/attachments/708683759599484988/868750391783862342/logo-coppa.png')
+      	    .setThumbnail('https://media.discordapp.net/attachments/708683759599484988/868750391783862342/logo-coppa.png')
             .setColor('#40B24A')
             .addField('Creator', '[Woogiesii#1140](https://github.com/woogiesii)', true)
             .addField('Repository', '[Here](https://github.com/woogiesii/coppamusic)', true)
-            .addField('\u200b',
-                `[CoppaMusic](https://github.com/woogiesii/coppamusic/) is [Blacky](https://github.com/brblacky)'s Was created by brblacky. He really wants to make his first open source project ever. Because he wants more for coding experience. In this project, he was challenged to make project with less bugs. Hope you enjoy using LavaMusic!`
             )
         return message.channel.send({embeds: [mainPage], components: [row]});
     }
